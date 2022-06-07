@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { CloseButton } from "../CloseButton";
 import { FeedbackContentStep } from "./Steps/FeedbackContentStep.tsx";
 import { FeedbackSuccessStep } from "./Steps/FeedbackSuccessStep";
 import { FeedbackTypeStep } from "./Steps/FeedbackTypeStep";
@@ -8,22 +7,22 @@ export const feedbackTypes = {
   BUG: {
     title: "Problema",
     image: {
-      url: "",
-      alt: "",
+      url: "assets/bug.png",
+      alt: "Bug",
     },
   },
   IDEA: {
     title: "Ideia",
     image: {
-      url: "",
-      alt: "",
+      url: "assets/idea.png",
+      alt: "Idea",
     },
   },
   OTHER: {
     title: "Other",
     image: {
-      url: "",
-      alt: "",
+      url: "assets/thought.png",
+      alt: "Other",
     },
   },
 };
