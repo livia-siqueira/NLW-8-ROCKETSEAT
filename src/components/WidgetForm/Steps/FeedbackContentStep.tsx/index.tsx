@@ -25,7 +25,6 @@ export function FeedbackContentStep({
     event.preventDefault();
 
     setIsSendingFeedBack(true);
-    console.log(picture, type, comment);
     await api.post("/feedbacks", {
       type,
       comment,
