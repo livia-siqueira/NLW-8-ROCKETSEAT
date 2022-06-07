@@ -3,25 +3,29 @@ import { FeedbackContentStep } from "./Steps/FeedbackContentStep.tsx";
 import { FeedbackSuccessStep } from "./Steps/FeedbackSuccessStep";
 import { FeedbackTypeStep } from "./Steps/FeedbackTypeStep";
 
+import bugSvg from "../../assets/bug.png";
+import ideaSvg from "../../assets/idea.png";
+import otherSvg from "../../assets/thought.png";
+
 export const feedbackTypes = {
   BUG: {
     title: "Problema",
     image: {
-      url: "assets/bug.png",
+      url: bugSvg,
       alt: "Bug",
     },
   },
   IDEA: {
     title: "Ideia",
     image: {
-      url: "assets/idea.png",
+      url: ideaSvg,
       alt: "Idea",
     },
   },
   OTHER: {
     title: "Other",
     image: {
-      url: "assets/thought.png",
+      url: otherSvg,
       alt: "Other",
     },
   },
