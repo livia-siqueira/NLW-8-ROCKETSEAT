@@ -1,4 +1,3 @@
-import axios from "axios";
 import { ArrowLeft } from "phosphor-react";
 import { FormEvent, useState } from "react";
 import { FeedBackType, feedbackTypes } from "../..";
