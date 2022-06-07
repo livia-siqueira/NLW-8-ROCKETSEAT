@@ -6,14 +6,11 @@ import { useCallback } from "react";
 export function Widget() {
   const themeActive = localStorage.getItem("Theme");
   const handleChangeTheme = useCallback(() => {
-    let nextTheme;
-
     if (themeActive === "dark") {
-      nextTheme = "light";
+      localStorage.setItem("Theme", "light");
     } else {
-      nextTheme = "dark";
+      localStorage.setItem("Theme", "dark");
     }
-    localStorage.setItem("Theme", nextTheme);
     document.documentElement.classList.toggle(themeActive as string);
   }, [themeActive]);
 
