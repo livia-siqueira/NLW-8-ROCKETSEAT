@@ -1,18 +1,12 @@
 import { ChatTeardropDots, Circle } from "phosphor-react";
 import { Popover } from "@headlessui/react";
 import { WidgetForm } from "../WidgetForm";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 
 export function Widget() {
-  const themeActive = localStorage.getItem("Theme");
   const handleChangeTheme = useCallback(() => {
-    if (themeActive === "dark") {
-      localStorage.setItem("Theme", "light");
-    } else {
-      localStorage.setItem("Theme", "dark");
-    }
-    document.documentElement.classList.toggle(themeActive as string);
-  }, [themeActive]);
+    document.documentElement.classList.toggle("dark" as string);
+  }, []);
 
   return (
     <div className={`w-[calc(100vw-2rem)] flex justify-end py-4`}>
