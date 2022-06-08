@@ -14,4 +14,4 @@
 
 
 ## Dark and light themes in the application.
-![Video](assets/video.mp4)
+![Video](assets/video_.gif)
